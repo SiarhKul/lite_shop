@@ -39,12 +39,13 @@ function ajaxGetGoodsInfo() {
 }
 
 function showCart(data) {
+	console.log("🔴----------- 🔸 data", data);
 	let out = '<table class="table table-striped table-cart"><tbody>';
 	let total = 0;
 	for (let key in cart) {
 		out += `<tr>
                 <td colspan="4">
-                  <a href="/goods?id=${key}">${data[key]["name"]}</a>
+                  <a href="/goods/${data[key]["slug"]}">${data[key]["name"]}</a>
                 <td/>
             </tr>
             <tr>
