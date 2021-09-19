@@ -1,0 +1,27 @@
+{
+	"name": "node-light-shop",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"cookie": "^0.4.1",
+		"cookie-parser": "^1.4.5",
+		"debug": "^4.3.2",
+		"mustard-ui": "^1.0.4",
+		"mysql": "^2.18.1",
+		"nodemailer": "^6.6.3",
+		"nodemon": "^2.0.12",
+		"pug": "^2.0.3"
+	},
+	"devDependencies": {
+		"express": "^4.17.1"
+	},
+	"scripts": {
+		"start:node": "set DEBUG=express:* & node app.js",
+		"start:nodemon": "set DEBUG=express:router & npx nodemon app.js",
+		"nodemon": "npx nodemon app.js"
+	},
+	"author": "",
+	"license": "ISC"
+}
